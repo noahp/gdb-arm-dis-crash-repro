@@ -10,7 +10,7 @@ To try it out:
 ❯ docker build -t gdb-arm-dis-crash-repro .
 # 2. run the test command
 ❯ docker run --rm -i -t gdb-arm-dis-crash-repro bash -c \
-    "/opt/gdb/gdb/gdb /opt/example-semihosting.elf -batch --ex 'disassemble 0x8003c44,+2'"
+    "/opt/gdb/gdb/gdb /opt/demo/app.elf -batch --ex 'disassemble __malloc_unlock+2'"
 Dump of assembler code from 0x8003c44 to 0x8003c46:
 
 
